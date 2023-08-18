@@ -31,4 +31,4 @@ Expected Output: [0, "Beep", "Boop", "Won't you be my neighbor?"]
 <!-- Test 6 -->
 Test: "It should establish hierarchy of substitutions, with 3 within numbers being highest and 1 being the lowest"
 Code: beepBoop(14)
-Expected Output: [0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!"]
+Expected Output: [0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!"] 
