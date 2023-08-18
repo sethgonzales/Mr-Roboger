@@ -37,3 +37,8 @@ Expected Output: [0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8
 Test: "It should return a string of all numbers and substitutions separated by commas"
 Code: beepBoop(3)
 Expected Output: "0, Beep, Boop, Won't you be my neighbor?"
+
+<!-- Test 8 -->
+Test: "It should respond to an input that is not classified as a number"
+Code: beepBoop("hi")
+Expected Output: "Beep! That's not a number! You will NOT be my beep boop neighbor!"
