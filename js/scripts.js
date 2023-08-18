@@ -1,9 +1,9 @@
 //Business Logic
 function beepBoop(numberInput) {
     if (isNaN(numberInput)) {
-        return "Hey, that's not a number! You will NOT be my beep boop neighbor!";
+        return "Beep! That's not a number! You will NOT be my beep boop neighbor!";
     }
-    
+
     let numberArray = [];
     for (let i = 0; i <= numberInput; i += 1) {
         numberArray.push(i);
