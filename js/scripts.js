@@ -34,24 +34,28 @@ function giveResponse(event) {
     //find p tags and clear any previous entries
     const response = document.getElementById("response");
     const falseEntry = document.getElementById("false-entry");
+    const image1Place = document.getElementById("image1-place");
+    const image2Place = document.getElementById("image2-place");
     response.innerText = "";
     falseEntry.innerText = "";
+    image1Place.innerText = "";
+    image2Place.innerText = "";
 
     if (!responseBeep === false) {
         response.append(responseBeep);
         const img1 = document.createElement("img");
-        response.append(img1);
-        img1.setAttribute("src", "https://media.giphy.com/media/33Gr5O88PgslOninGo/giphy.gif");
-        img1.setAttribute("alt", "gif of Mr Rogers turning in a circle");
-        img1.setAttribute("class", "img");
+        image1Place.append(img1);
+        img1.setAttribute("src", "/css/rogersimg.webp");
+        img1.setAttribute("alt", "Mr Rogers with a robot");
+        img1.setAttribute("class", "images");
 
     } else {
         falseEntry.append("Beep! That's not a number! You will NOT be my beep boop neighbor!");
         const img2 = document.createElement("img");
-        falseEntry.append(img2);
+        image2Place.append(img2);
         img2.setAttribute("src", "https://media.tenor.com/ffxXBrAQw5wAAAAC/robot-attack-saturday-night-live.gif");
         img2.setAttribute("alt", "gif of robot fighting old man");
-        img2.setAttribute("class", "img");
+        img2.setAttribute("class", "images");
     };
 }
 

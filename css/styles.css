@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+    margin: 2% 10%;
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: -1px;
+    background-color: rgba(229, 229, 247, 0.32);
+    background-image: repeating-radial-gradient(circle at center center, rgba(181, 182, 188, 0.34), rgba(181, 182, 188, 0.32), 10px, transparent 20px, transparent 10px);
+    background-blend-mode: multiply;
+}
+ .images {
+    width: 20%;
+    border-radius: 50%;
+ }
+
+ .response-section{
+    font-weight: bold;
+    font-style: italic;
+ }
