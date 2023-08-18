@@ -1,7 +1,7 @@
 //Business Logic
 function beepBoop(numberInput) {
     if (isNaN(numberInput)) {
-        return "Beep! That's not a number! You will NOT be my beep boop neighbor!";
+        return false;
     }
 
     let numberArray = [];
@@ -27,14 +27,23 @@ function giveResponse(event) {
     event.preventDefault();
 
     //find form and connect to beepBoop function
-    const form = document.getElementById("number-form"); 
+    const form = document.getElementById("number-form");
     const userResp = parseInt(form["numberInput"].value);
     const responseBeep = beepBoop(userResp);
 
-    //clear any text in <p> tag, then append with responseBeep
+    //find p tags and clear any previous entries
     const response = document.getElementById("response");
+    const falseEntry = document.getElementById("false-entry");
     response.innerText = "";
-    response.append(responseBeep);
+    falseEntry.innerText = "";
+
+    if (!beepBoop(!numberInput === false)) {
+        response.append(responseBeep);
+    } else {
+        falseEntry.append("Beep! That's not a number! You will NOT be my beep boop neighbor!");
+    };
+
+
 }
 
 window.addEventListener("load", function () {
