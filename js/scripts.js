@@ -11,6 +11,8 @@ function beepBoop(numberInput) {
             return "Beep!"
         } else if (element.toString().includes('2')) {
             return "Boop!"
+        } else if (element.toString().includes('3')) {
+            return "Won't you be my neighbor?"
         }
         return element;
     });
