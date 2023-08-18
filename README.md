@@ -1,3 +1,29 @@
+# Mr. Roboger's Generator
+
+#### By Seth Gonzales
+
+#### A website that will take a numerical input and turn it into a response from Mr. Roboger.
+
+## Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+
+## Description
+
+This website takes a number input from the user and returns a list of numbers spanning from zero to the user's inputted value. Numbers such as 1, 2, and 3 are replaced with "Beep!", "Boop!", and "Won't you be my neighbor?" respectively, giving the user an interesting response from Mr. Roboger. 
+
+## Setup/Installation Requirements
+
+* Navigate to the Mr. Roboger repository on [Github](https://github.com/sethgonzales/Mr-Roboger).
+* Clone the code and download into a zip file. 
+* Unzip the file and navigate inside the folder.  
+* Open the index.html file in your preferred browser and begin exploring! 
+
+## Tests
+
+```
 Describe: beepBoop()
 
 <!-- Test 1 -->
@@ -42,3 +68,5 @@ Expected Output: "0, Beep, Boop, Won't you be my neighbor?"
 Test: "It should respond to an input that is not classified as a number"
 Code: beepBoop("hi")
 Expected Output: "false"
+```
+

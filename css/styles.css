@@ -8,11 +8,11 @@ body {
     height: 100vh;
 }
 
-.header h1{
+.header h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     word-spacing: 0px;
     color:rgb(2, 4, 3);
-    animation: color-change 4s infinite;
+    animation: color-change 10s infinite;
 }
 
 @keyframes color-change {
@@ -22,12 +22,21 @@ body {
     100% {color: rgba(255, 0, 0, 0.427);}
   }
 
-.header h1:hover{
+.header h1:hover {
     opacity: 0.8;
     color: rgba(147, 36, 36, 0.7);
 }
 
-.response-section{
+.form-section {
+    color:rgb(2, 4, 3);
+    animation: font-size 3s infinite;
+}
+
+@keyframes font-size {
+    50% {font-size: 110%;}
+}
+
+.response-section {
     font-weight: bold;
     font-style: italic;
     font-size: large;
