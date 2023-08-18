@@ -19,7 +19,7 @@ function beepBoop(numberInput) {
         return element;
     });
 
-    return roboArray.join(", ");
+    return roboArray.join(" ");
 }
 
 //User Interface Logic
@@ -37,13 +37,22 @@ function giveResponse(event) {
     response.innerText = "";
     falseEntry.innerText = "";
 
-    if (!beepBoop(!numberInput === false)) {
+    if (!responseBeep === false) {
         response.append(responseBeep);
+        const img1 = document.createElement("img");
+        response.append(img1);
+        img1.setAttribute("src", "https://media.giphy.com/media/33Gr5O88PgslOninGo/giphy.gif");
+        img1.setAttribute("alt", "gif of Mr Rogers turning in a circle");
+        img1.setAttribute("class", "img");
+
     } else {
         falseEntry.append("Beep! That's not a number! You will NOT be my beep boop neighbor!");
+        const img2 = document.createElement("img");
+        falseEntry.append(img2);
+        img2.setAttribute("src", "https://media.tenor.com/ffxXBrAQw5wAAAAC/robot-attack-saturday-night-live.gif");
+        img2.setAttribute("alt", "gif of robot fighting old man");
+        img2.setAttribute("class", "img");
     };
-
-
 }
 
 window.addEventListener("load", function () {
