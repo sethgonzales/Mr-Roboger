@@ -26,16 +26,17 @@ function beepBoop(numberInput) {
 function giveResponse(event) {
     event.preventDefault();
 
-    const body = document.querySelector("body");
-    const form = document.getElementById("number-form");
+    //find form and connect to beepBoop function
+    const form = document.getElementById("number-form"); 
     const userResp = parseInt(form["numberInput"].value);
-   
-    const pElement = document.createElement("p");
-    pElement.append(beepBoop(userResp));
-    body.append(pElement);
+    const responseBeep = beepBoop(userResp);
+
+    //clear any text in <p> tag, then append with responseBeep
+    const response = document.getElementById("response");
+    response.innerText = "";
+    response.append(responseBeep);
 }
 
 window.addEventListener("load", function () {
     document.getElementById("number-form").addEventListener("submit", giveResponse);
-    pElement.remove();
 });
