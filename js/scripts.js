@@ -22,4 +22,20 @@ function beepBoop(numberInput) {
     return roboArray.join(", ");
 }
 
+//User Interface Logic
+function giveResponse(event) {
+    event.preventDefault();
 
+    const body = document.querySelector("body");
+    const form = document.getElementById("number-form");
+    const userResp = parseInt(form["numberInput"].value);
+   
+    const pElement = document.createElement("p");
+    pElement.append(beepBoop(userResp));
+    body.append(pElement);
+}
+
+window.addEventListener("load", function () {
+    document.getElementById("number-form").addEventListener("submit", giveResponse);
+    pElement.remove();
+});
