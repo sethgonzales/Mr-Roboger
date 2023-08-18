@@ -3,16 +3,42 @@ body {
     margin: 2% 10%;
     font-family: 'Courier New', Courier, monospace;
     word-spacing: -1px;
-    background-color: rgba(229, 229, 247, 0.32);
-    background-image: repeating-radial-gradient(circle at center center, rgba(181, 182, 188, 0.34), rgba(181, 182, 188, 0.32), 10px, transparent 20px, transparent 10px);
-    background-blend-mode: multiply;
+    background-color: rgba(229, 247, 236, 0.178);
+    background-image: repeating-radial-gradient(circle at center, rgba(180, 78, 78, 0.108), rgba(188, 181, 188, 0.137), 20px, transparent 20px, transparent 10px);
+    height: 100vh;
 }
- .images {
-    width: 20%;
-    border-radius: 50%;
- }
 
- .response-section{
+.header h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 0px;
+    color:rgb(2, 4, 3);
+    animation: color-change 4s infinite;
+}
+
+@keyframes color-change {
+    0%   {color: rgba(255, 0, 0, 0.427);}
+    25%  {color: rgba(25, 104, 30, 0.536);}
+    50%  {color: rgba(43, 43, 202, 0.489);}
+    100% {color: rgba(255, 0, 0, 0.427);}
+  }
+
+.header h1:hover{
+    opacity: 0.8;
+    color: rgba(147, 36, 36, 0.7);
+}
+
+.response-section{
     font-weight: bold;
     font-style: italic;
+    font-size: large;
+ }
+
+ .images {
+    width: 30%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 8px rgba(1, 1, 1, 0.304);
+
+ }
+ .images:hover {
+    opacity: 0.8;
  }

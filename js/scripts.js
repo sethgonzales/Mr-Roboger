@@ -41,14 +41,16 @@ function giveResponse(event) {
     image1Place.innerText = "";
     image2Place.innerText = "";
 
+    //Calling the responseBeep function for any number
     if (!responseBeep === false) {
-        response.append(responseBeep);
+        response.append("Mr. Robogers says: " + responseBeep);
         const img1 = document.createElement("img");
         image1Place.append(img1);
         img1.setAttribute("src", "/css/rogersimg.webp");
         img1.setAttribute("alt", "Mr Rogers with a robot");
         img1.setAttribute("class", "images");
 
+    //Append with error if not a number
     } else {
         falseEntry.append("Beep! That's not a number! You will NOT be my beep boop neighbor!");
         const img2 = document.createElement("img");
